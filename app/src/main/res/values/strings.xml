@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="db_drop">drop</string>
+    <string name="default_text">x</string>
+</resources>
