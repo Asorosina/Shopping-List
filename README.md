@@ -9,4 +9,8 @@ If I was to improve it now, I would rebuild it using object-oriented programming
 
 ![mobile app](shoppinglist_black.bmp)
 
+<p align="center">
+ <img src="shoppinglist_black.bmp" width="300" height="600">
+
+</p>
 
