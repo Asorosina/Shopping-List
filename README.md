@@ -1,7 +1,7 @@
 
 ### ANDROID APP - Shopping List
 This is my second Android app. <br/>
-It's a shopping list developed using Java, XML and Android Studio.
+It's a shopping list developed using Java, XML and Android Studio.<br/>
 I build it primarily to learn data persistence. It saves the item's name value using an SQLite database and items' ticked/unticked status using shared preferences.
 <br/>
 <br/>
