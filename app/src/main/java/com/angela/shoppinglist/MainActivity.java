@@ -2,7 +2,6 @@ package com.angela.shoppinglist;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -12,9 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
 import com.angela.shoppinglist.databinding.ActivityMainBinding;
-
 import java.util.ArrayList;
 import java.util.prefs.Preferences;
 
@@ -22,10 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String DATA_ID = "data_preferences";
     private ActivityMainBinding binding;
-
     DatabaseController db = new DatabaseController(MainActivity.this);
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         //set checked
-       if (sharedPreferences.getBoolean("1",false)) {
+        if (sharedPreferences.getBoolean("1",false)) {
            binding.checkBox1.setChecked(true);
-       }
-       if (sharedPreferences.getBoolean("2",false)) {
+        }
+        if (sharedPreferences.getBoolean("2",false)) {
             binding.checkBox2.setChecked(true);
         }
         if (sharedPreferences.getBoolean("3",false)) {
@@ -364,7 +358,6 @@ public void setDefaultData(){
     ////save data to table
     public void onPause() {
         super.onPause();
-
         db.updateItem(1, binding.editText1.getText().toString());
         db.updateItem(2, binding.editText2.getText().toString());
         db.updateItem(3, binding.editText3.getText().toString());
